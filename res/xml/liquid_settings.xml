@@ -19,13 +19,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/app_settings_title">
 
-    <!-- Ambient -->
-    <Preference
-        android:key="ambient_category"
-        android:title="@string/ambient_title"
-        android:icon="@drawable/ic_settings_ambient"
-        android:fragment="com.liquid.liquidlounge.fragments.AmbientSettings" />
-
     <!-- Animations -->
     <Preference
         android:key="animation_category"
@@ -50,6 +43,13 @@
             android:targetPackage="org.omnirom.device"
             android:targetClass="org.omnirom.device.DeviceSettingsActivity" />
     </Preference>
+
+    <!-- Doze -->
+    <Preference
+        android:key="doze_category"
+        android:title="@string/doze_title"
+        android:icon="@drawable/ic_settings_doze"
+        android:fragment="com.liquid.liquidlounge.fragments.DozeSettings" />
 
     <!-- Gestures -->
     <Preference
